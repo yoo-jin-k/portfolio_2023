@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio_2023/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio_2023/static/js/main.2017a58f.js",
+    "main.css": "/portfolio_2023/static/css/main.f1f2e854.css",
+    "main.js": "/portfolio_2023/static/js/main.3521d108.js",
     "static/js/787.755d6b54.chunk.js": "/portfolio_2023/static/js/787.755d6b54.chunk.js",
-    "static/media/logo.svg": "/portfolio_2023/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/my_img.jpg": "/portfolio_2023/static/media/my_img.460aaf655f1fcb279403.jpg",
+    "static/media/petner_erd.png": "/portfolio_2023/static/media/petner_erd.3b8c7205b15217ab47c1.png",
+    "static/media/petner_main.png": "/portfolio_2023/static/media/petner_main.cc0fd25936af56cede5d.png",
+    "static/media/info_1.png": "/portfolio_2023/static/media/info_1.a33966fe9e4fba4309d6.png",
+    "static/media/sample_img.png": "/portfolio_2023/static/media/sample_img.51e399170c8ebda83300.png",
+    "static/media/nerdy.png": "/portfolio_2023/static/media/nerdy.224adca1c79c4a247415.png",
+    "static/media/petner_m_img.png": "/portfolio_2023/static/media/petner_m_img.ab48ab6308cf7728c2c1.png",
     "index.html": "/portfolio_2023/index.html",
-    "main.073c9b0a.css.map": "/portfolio_2023/static/css/main.073c9b0a.css.map",
-    "main.2017a58f.js.map": "/portfolio_2023/static/js/main.2017a58f.js.map",
+    "main.f1f2e854.css.map": "/portfolio_2023/static/css/main.f1f2e854.css.map",
+    "main.3521d108.js.map": "/portfolio_2023/static/js/main.3521d108.js.map",
     "787.755d6b54.chunk.js.map": "/portfolio_2023/static/js/787.755d6b54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2017a58f.js"
+    "static/css/main.f1f2e854.css",
+    "static/js/main.3521d108.js"
   ]
 }
