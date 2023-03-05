@@ -111,33 +111,31 @@ const Project = () => {
                                     :
                                     <Col span={24} className={'project_md_info'}>
                                         <Row gutter={[0,32]}>
-                                            <Col span={24}>
+                                            <Col span={24} style={contentStyle} onClick={() => setProject1(true)}>
                                                 <Card
                                                     hoverable
-                                                    style={{ width: '100%' }}
-                                                    cover={<img alt="example" src={my_img} />}
+                                                    style={{ width: '100%',height: '100%' }}
+                                                    cover={<img alt="example" src={petner} />}
                                                 >
-                                                    <Meta
-                                                        title={<>"Title"</>}
-                                                        description="text" />
+                                                    <Meta title="Petner" description="애완동물들을 위한 매칭 플랫폼" />
                                                 </Card>
                                             </Col>
-                                            <Col span={24}>
+                                            <Col span={24} style={contentStyle} onClick={() => setProject2(true)}>
                                                 <Card
                                                     hoverable
-                                                    style={{ width: '100%' }}
-                                                    cover={<img alt="example" src={my_img} />}
+                                                    style={{ width: '100%',height: '100%' }}
+                                                    cover={<img alt="example" src={MOONGKLE} />}
                                                 >
-                                                    <Meta title="Title" description="text" />
+                                                    <Meta title="MOONGKLE" description="쇼핑몰 클론코딩" />
                                                 </Card>
                                             </Col>
-                                            <Col span={24}>
+                                            <Col span={24} style={contentStyle} onClick={() => setProject3(true)}>
                                                 <Card
                                                     hoverable
-                                                    style={{ width: '100%' }}
-                                                    cover={<img alt="example" src={my_img} />}
+                                                    style={{ width: '100%',height: '100%' }}
+                                                    cover={<img alt="example" src={nerdy} />}
                                                 >
-                                                    <Meta title="Title" description="text" />
+                                                    <Meta title="NERDY" description="nerdy 쇼핑몰 리뉴얼 클론코딩" />
                                                 </Card>
                                             </Col>
                                         </Row>
