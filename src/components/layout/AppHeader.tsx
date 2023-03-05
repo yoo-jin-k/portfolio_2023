@@ -51,10 +51,10 @@ const { useBreakpoint } = Grid;
                     className={'menu_list'}
                     style={{backgroundColor:'rgba(133,112,112,0)',display: 'flex', justifyContent: 'flex-end',width: isXs?50:'auto',float: isXs?'right':'none'}}
                 >
-                    <Menu.Item key="/"><Link to="/">home</Link></Menu.Item>
-                    <Menu.Item ><Link to="/about">about</Link></Menu.Item>
-                    <Menu.Item ><Link to="/project">project</Link></Menu.Item>
-                    <Menu.Item ><Link to="/contact">contact</Link></Menu.Item>
+                    <Menu.Item key="/" style={{width:80}}><Link to="/">home</Link></Menu.Item>
+                    <Menu.Item style={{width:90}}><Link to="/about">about</Link></Menu.Item>
+                    <Menu.Item style={{width:100}} ><Link to="/project">project</Link></Menu.Item>
+                    <Menu.Item style={{width:100}} ><Link to="/contact">contact</Link></Menu.Item>
                 </Menu>
 
             </Header>

@@ -1,0 +1,22 @@
+@import "color";
+
+.contact_info1 {
+  .ant-btn-primary {
+    background-color: #222222;
+    text-align: left;
+    &:hover {
+      background-color: #222222;
+    }
+  }
+}
+
+.contact_info2 {
+  .ant-input {
+    background-color: #222222;
+    color: #fff;
+    border: none;
+    &::placeholder {
+      color: #eeeeee;
+    }
+  }
+}

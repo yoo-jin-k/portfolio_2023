@@ -10,6 +10,7 @@ import ModalLayout from '../../components/layout/ModalLayout';
 import AboutInfo from '../about/AboutInfo';
 import '../../components/style/project.scss';
 import PetnerInfo from './components/PetnerInfo';
+import MoongKleInfo from './components/MoongKleInfo';
 
 const {Content} = Layout;
 const { Title,Text } = Typography;
@@ -154,7 +155,7 @@ const Project = () => {
                 </ModalLayout>
                 <ModalLayout visible={project2} onOk={handleOk} onCancel={handleCancel} >
                     {/*<AboutInfo/>*/}
-                    222222
+                    <MoongKleInfo/>
                 </ModalLayout>
                 <ModalLayout visible={project3} onOk={handleOk} onCancel={handleCancel} >
                     {/*<AboutInfo/>*/}

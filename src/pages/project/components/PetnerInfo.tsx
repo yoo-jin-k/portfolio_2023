@@ -21,13 +21,6 @@ const { Title, Text } = Typography;
 const { Panel } = Collapse;
 const { useBreakpoint } = Grid;
 
-// const text = `
-//   A dog is a type of domesticated animal.
-//   Known for its loyalty and faithfulness,
-//   it can be found as a welcome guest in many households across the world.
-// `;
-
-
 
 const PetnerInfo = () => {
     const screens = useBreakpoint();
@@ -80,7 +73,7 @@ const PetnerInfo = () => {
 
                             <Collapse
                                 bordered={false}
-                                defaultActiveKey={['1']}
+                                defaultActiveKey={['0']}
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                                 className={'project_collapse'}
                             >
