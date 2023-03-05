@@ -1,22 +1,35 @@
 {
   "files": {
-    "main.css": "/portfolio_2023/static/css/main.f1f2e854.css",
-    "main.js": "/portfolio_2023/static/js/main.3521d108.js",
+    "main.css": "/portfolio_2023/static/css/main.e45cf464.css",
+    "main.js": "/portfolio_2023/static/js/main.3a3129b5.js",
     "static/js/787.755d6b54.chunk.js": "/portfolio_2023/static/js/787.755d6b54.chunk.js",
     "static/media/my_img.jpg": "/portfolio_2023/static/media/my_img.460aaf655f1fcb279403.jpg",
     "static/media/petner_erd.png": "/portfolio_2023/static/media/petner_erd.3b8c7205b15217ab47c1.png",
+    "static/media/info_11.png": "/portfolio_2023/static/media/info_11.31259bee5ccaab20058d.png",
+    "static/media/info_13.png": "/portfolio_2023/static/media/info_13.22b1e2be181146d8efd7.png",
+    "static/media/info_14.png": "/portfolio_2023/static/media/info_14.15b2883191282b8116d2.png",
+    "static/media/info_9.png": "/portfolio_2023/static/media/info_9.555e84dd95a768353f33.png",
     "static/media/petner_main.png": "/portfolio_2023/static/media/petner_main.cc0fd25936af56cede5d.png",
-    "static/media/info_1.png": "/portfolio_2023/static/media/info_1.a33966fe9e4fba4309d6.png",
+    "static/media/info_4.png": "/portfolio_2023/static/media/info_4.b90fdfaa9664a5b19d42.png",
+    "static/media/info_8.png": "/portfolio_2023/static/media/info_8.d8e89a4822a8784ceb18.png",
+    "static/media/info_1.png": "/portfolio_2023/static/media/info_1.715f28401d31db06825f.png",
+    "static/media/info_5.png": "/portfolio_2023/static/media/info_5.a1013b76ab59e0f3e811.png",
+    "static/media/info_10.png": "/portfolio_2023/static/media/info_10.1ed86c96274bf1a8a874.png",
+    "static/media/info_6.png": "/portfolio_2023/static/media/info_6.04160df0deb7e0e113d5.png",
+    "static/media/info_12.png": "/portfolio_2023/static/media/info_12.62859fedf11f0783299e.png",
+    "static/media/info_2.svg": "/portfolio_2023/static/media/info_2.50a1ee641b678fa3c0cdb8c06029ac24.svg",
     "static/media/sample_img.png": "/portfolio_2023/static/media/sample_img.51e399170c8ebda83300.png",
+    "static/media/info_7.png": "/portfolio_2023/static/media/info_7.49428574358a316c973f.png",
+    "static/media/info_3.png": "/portfolio_2023/static/media/info_3.4a6c13a2078368dea467.png",
     "static/media/nerdy.png": "/portfolio_2023/static/media/nerdy.224adca1c79c4a247415.png",
     "static/media/petner_m_img.png": "/portfolio_2023/static/media/petner_m_img.ab48ab6308cf7728c2c1.png",
     "index.html": "/portfolio_2023/index.html",
-    "main.f1f2e854.css.map": "/portfolio_2023/static/css/main.f1f2e854.css.map",
-    "main.3521d108.js.map": "/portfolio_2023/static/js/main.3521d108.js.map",
+    "main.e45cf464.css.map": "/portfolio_2023/static/css/main.e45cf464.css.map",
+    "main.3a3129b5.js.map": "/portfolio_2023/static/js/main.3a3129b5.js.map",
     "787.755d6b54.chunk.js.map": "/portfolio_2023/static/js/787.755d6b54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1f2e854.css",
-    "static/js/main.3521d108.js"
+    "static/css/main.e45cf464.css",
+    "static/js/main.3a3129b5.js"
   ]
 }
