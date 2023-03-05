@@ -1,0 +1,72 @@
+@import "color";
+//  모달 안 내용
+.about_right {
+  //overflow-y: scroll;
+  //height: 100%;
+  background: #222222;
+  & > .ant-row {
+    overflow-y: scroll;
+    @media (max-width: 768px) {
+      overflow-y: hidden;
+      height: auto;
+      padding: 0px;
+    }
+    background: #222222;
+    width: 100%;
+    height: calc(87vh - 35px);
+    clear: both;
+    float: left;
+    position: relative;
+    padding: 0 0 0 30px;
+  }
+  //.about_title span {color: blueviolet}
+  .ant-steps {
+    .ant-steps-item-icon >.ant-steps-icon .ant-steps-icon-dot {background: $point_color;}
+    .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {background-color: $point_color;}
+
+    .ant-steps-item-finish, .ant-steps-item-process {
+      & > .ant-steps-item-container {
+        & > .ant-steps-item-content {
+          & > .ant-steps-item-title {
+            color: #fff;
+            .ant-steps-item-subtitle {
+              color: #fff;
+              padding: 2px 5px;
+              background: #7e7e7e;
+              border-radius: 4px;
+            }
+          }
+          & > .ant-steps-item-description {
+            color: #9b9b9b;
+          }
+        }
+      }
+    }
+  }
+//  skill
+  .skill_info {
+    .anticon {color: $point_color}
+    .ant-col {
+      margin-bottom: 15px;
+      .ant-row {
+        align-items: center;
+        .anticon {margin-right: 2.5px;}
+      }
+    }
+  }
+
+}
+.about_left {
+  .icon_group .point_color {margin-right: 5px}
+  .ant-divider-horizontal {
+    margin: 5px 0px;
+    background: rgba(255,255,255,.15);
+  }
+}
+
+.ant-divider-horizontal {
+  margin: 0 0 15px;
+  background: rgba(255,255,255,.15);
+}
+
+

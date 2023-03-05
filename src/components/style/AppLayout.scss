@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import "color";
+
+* {
+  h1, h2, h3, h4, h5, p, span, text, .ant-typography, title {
+    &.ant-typography {
+      font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
+      color: #fff;
+    }
+    font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
+  color: #fff;
+  }
+}
+.ant-layout .ant-layout-header {
+  padding-inline: 10vw;
+  @media (max-width: 1040px) { padding-inline: 5vw;}
+  @media (max-width: 768px) {padding-inline: 20px;}
+
+}
+.logo {letter-spacing: 10px; margin: 0px;}
+.site-layout {
+  color: #fff;
+  z-index: 999;
+  display: table;
+  .container {
+    display:table-cell;
+    vertical-align:middle;
+    padding: 0px 10vw;
+    @media (max-width: 1040px) { padding: 0px 5vw }
+    @media (max-width: 768px) { padding: 0px 20px; }
+    .project_md {
+      @media (max-width: 768px) {
+        position: absolute;
+        top: 80px;
+        bottom: 50px;
+        left: 20px;
+        right: 20px;
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+    }
+  }
+}
+
+.menu_list {
+  .ant-menu-title-content a:hover { color: $point_color; }
+  //color:#fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  &.ant-menu-light.ant-menu-horizontal {
+    & > .ant-menu-item-selected::after , & > .ant-menu-item-active:hover::after {
+      bottom: 10px;
+    }
+    & > .ant-menu-item::after {
+      border-bottom: none;
+    }
+  }
+}
+
+.ant-menu-light {
+  background-color: #000000e3;
+  width: 100%;
+  &.ant-menu-submenu>.ant-menu {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+}
+
+
+
+
+// mewnu - home
+.menu_home {
+  .home_title {
+    color: #fff;
+    margin: 0px;
+    font-size: 5.5vw;
+  }
+  .home_sub {
+    font-size: 2vw;
+    font-weight: 500;
+  }
+}
+
+// menu - about
+.menu_about {
+  .my_img {
+    background-image: url('../../assets/sample_img.png');
+    height: 30vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+  }
+}
+
+
+.ant-carousel {
+  width: 80vw;
+  @media (max-width: 1040px) { width: 90vw; }
+  @media (max-width: 768px) { width: calc(100vw - 40px); }
+}
+
+//
+.ant-carousel .slick-dots {
+  position: initial;
+}
+
+
+
+#main_btn {
+  background-color: $point_color;
+  border: none;
+  &:hover {
+    background-color: $point_color;
+  }
+}
+
+.point_color {
+  color: $point_color;
+}
+
+
+
+
+
+
+
+
+
+
