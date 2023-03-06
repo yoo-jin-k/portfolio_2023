@@ -67,6 +67,9 @@
 .ant-divider-horizontal {
   margin: 0 0 15px;
   background: rgba(255,255,255,.15);
+  &.original {
+    margin: 15px 0;
+  }
 }
 
 

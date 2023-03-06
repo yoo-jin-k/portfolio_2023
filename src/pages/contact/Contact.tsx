@@ -23,7 +23,7 @@ const Contact = () => {
                             <Divider/>
                             <Row className={'project_info'}>
                                 <Col span={24}>
-                                    <Row gutter={[isMd?32:0,isMd?0:16]}>
+                                    <Row gutter={[isMd?32:0,isMd?0:32]}>
                                         <Col span={isMd?12:24} className={'contact_info1'}>
                                             <Row gutter={[0,16]}>
                                                 <Col span={24}>

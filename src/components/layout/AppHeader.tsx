@@ -18,7 +18,7 @@ const { useBreakpoint } = Grid;
     // const { account, walletContext, chainId, chainName } = useWeb3();
     const screens = useBreakpoint();
     const { xs: isXs } = screens;
-     const { sm: isSm } = screens;
+     const { md: isMd } = screens;
 
     const {
         token: { colorBgContainer },
@@ -51,10 +51,10 @@ const { useBreakpoint } = Grid;
                     className={'menu_list'}
                     style={{backgroundColor:'rgba(133,112,112,0)',display: 'flex', justifyContent: 'flex-end',width: isXs?50:'auto',float: isXs?'right':'none'}}
                 >
-                    <Menu.Item key="/" style={{width:80}}><Link to="/">home</Link></Menu.Item>
-                    <Menu.Item style={{width:90}}><Link to="/about">about</Link></Menu.Item>
-                    <Menu.Item style={{width:100}} ><Link to="/project">project</Link></Menu.Item>
-                    <Menu.Item style={{width:100}} ><Link to="/contact">contact</Link></Menu.Item>
+                    <Menu.Item key="/" style={{width:isMd?80:'100%'}}><Link to="/">home</Link></Menu.Item>
+                    <Menu.Item style={{width:isMd?90:'100%'}} ><Link to="/about">about</Link></Menu.Item>
+                    <Menu.Item style={{width:isMd?100:'100%'}} ><Link to="/project">project</Link></Menu.Item>
+                    <Menu.Item style={{width:isMd?100:'100%'}} ><Link to="/contact">contact</Link></Menu.Item>
                 </Menu>
 
             </Header>

@@ -11,6 +11,7 @@ import AboutInfo from '../about/AboutInfo';
 import '../../components/style/project.scss';
 import PetnerInfo from './components/PetnerInfo';
 import MoongKleInfo from './components/MoongKleInfo';
+import NerdyInfo from "./components/NerdyInfo";
 
 const {Content} = Layout;
 const { Title,Text } = Typography;
@@ -65,7 +66,7 @@ const Project = () => {
                                 {isMd?
                                 <Carousel
                                     arrows prevArrow={<LeftOutlined className={'left'} color={'#fff'}/>} nextArrow={<RightOutlined  className={'left'}/>}
-                                    autoplay
+                                    // autoplay
                                 >
                                     <Col>
                                         <Row gutter={32} justify={'space-between'}>
@@ -75,7 +76,6 @@ const Project = () => {
                                                     style={{ width: '100%',height: '100%' }}
                                                     cover={<img alt="example" src={petner} />}
                                                 >
-                                                    <Meta title="Petner" description="애완동물들을 위한 매칭 플랫폼" />
                                                 </Card>
                                             </Col>
                                             <Col span={8} style={contentStyle} onClick={() => setProject2(true)}>
@@ -84,7 +84,6 @@ const Project = () => {
                                                     style={{ width: '100%',height: '100%' }}
                                                     cover={<img alt="example" src={MOONGKLE} />}
                                                 >
-                                                    <Meta title="MOONGKLE" description="쇼핑몰 클론코딩" />
                                                 </Card>
                                             </Col>
                                             <Col span={8} style={contentStyle} onClick={() => setProject3(true)}>
@@ -93,7 +92,6 @@ const Project = () => {
                                                     style={{ width: '100%',height: '100%' }}
                                                     cover={<img alt="example" src={nerdy} />}
                                                 >
-                                                    <Meta title="NERDY" description="nerdy 쇼핑몰 리뉴얼 클론코딩" />
                                                 </Card>
                                             </Col>
                                         </Row>
@@ -117,7 +115,6 @@ const Project = () => {
                                                     style={{ width: '100%',height: '100%' }}
                                                     cover={<img alt="example" src={petner} />}
                                                 >
-                                                    <Meta title="Petner" description="애완동물들을 위한 매칭 플랫폼" />
                                                 </Card>
                                             </Col>
                                             <Col span={24} style={contentStyle} onClick={() => setProject2(true)}>
@@ -126,7 +123,6 @@ const Project = () => {
                                                     style={{ width: '100%',height: '100%' }}
                                                     cover={<img alt="example" src={MOONGKLE} />}
                                                 >
-                                                    <Meta title="MOONGKLE" description="쇼핑몰 클론코딩" />
                                                 </Card>
                                             </Col>
                                             <Col span={24} style={contentStyle} onClick={() => setProject3(true)}>
@@ -135,7 +131,6 @@ const Project = () => {
                                                     style={{ width: '100%',height: '100%' }}
                                                     cover={<img alt="example" src={nerdy} />}
                                                 >
-                                                    <Meta title="NERDY" description="nerdy 쇼핑몰 리뉴얼 클론코딩" />
                                                 </Card>
                                             </Col>
                                         </Row>
@@ -149,14 +144,12 @@ const Project = () => {
                 </div>
                 <ModalLayout visible={project1} onOk={handleOk} onCancel={handleCancel}>
                     <PetnerInfo/>
-                    {/*<ProjectModalLayout/>*/}
                 </ModalLayout>
                 <ModalLayout visible={project2} onOk={handleOk} onCancel={handleCancel} >
-                    {/*<AboutInfo/>*/}
                     <MoongKleInfo/>
                 </ModalLayout>
                 <ModalLayout visible={project3} onOk={handleOk} onCancel={handleCancel} >
-                    {/*<AboutInfo/>*/}
+                    <NerdyInfo/>
                 </ModalLayout>
             </Content>
         </>

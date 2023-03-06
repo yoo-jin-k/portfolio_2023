@@ -1,10 +1,10 @@
 import {Row, Col, Typography, Collapse, theme, Grid, Button, Divider,Tag} from 'antd';
 import { CaretRightOutlined, PushpinOutlined, LinkOutlined } from '@ant-design/icons';
-import petner_main from '../../../assets/petner_main.png';
-import img1 from '../../../assets/petner/info_1.png';
-import img2 from '../../../assets/petner/info_2.svg';
-import img3 from '../../../assets/petner/info_3.png';
-import img4 from '../../../assets/petner/info_4.png';
+import moongkle_main from '../../../assets/moongkle/moongkle_mac_img.png';
+import img1 from '../../../assets/moongkle/img1.png';
+import img2 from '../../../assets/moongkle/img2.png';
+import img3 from '../../../assets/moongkle/img3.png';
+import img4 from '../../../assets/moongkle/img4.png';
 const { Title, Text } = Typography;
 const { Panel } = Collapse;
 const { useBreakpoint } = Grid;
@@ -44,7 +44,7 @@ const MoongKleInfo = () => {
                         </Col>
                         <Divider/>
                         <Col span={24} style={{marginBottom:20}}>
-                            <img src={petner_main} alt={'petner_main img'} width={'100%'}/>
+                            <img src={moongkle_main} alt={'moongkle_main'} width={'100%'}/>
                         </Col>
                         {/**/}
                         <Col span={24}>
@@ -58,9 +58,6 @@ const MoongKleInfo = () => {
                                 <Panel header={<Title level={5} className={'panel_title'}>프로젝트 소개</Title>} key="1" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
-                                            <img src={img1} alt={'img1'} width={'100%'}/>
-                                        </Col>
-                                        <Col span={24}>
                                             <Text>몽클이라는 쇼핑몰을 저만의 디자인으로<br/>
                                                 리뉴얼해 반응형응로 작업한 사이트 입니다.<br/>
                                                 깔끔함에 중점을 두었고 반응형으로 작업을 했습니다.
@@ -71,15 +68,37 @@ const MoongKleInfo = () => {
                                 <Panel header={<Title level={5} className={'panel_title'}>상세작업</Title>} key="2" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
-                                            <Title level={5}><PushpinOutlined /> Project Goal</Title>
-                                            <img src={img2} alt={'info_2'} style={{maxWidth:300}}/><br/>
-                                            <Text>
-                                               'moongkle' 사이트의 심플한 이미지를 살려<br/>
-                                                더 깔끔하게 레이아웃으로 재구성<br/>
-                                                디자인된 레이아웃을 탄탄하고<br/>
-                                                조직적인 HTML로 구현
-                                            </Text>
+                                            {isMd?
+                                            <Row>
+                                                <Col span={12}>
+                                                    <Title level={5}><PushpinOutlined /> Project Goal</Title>
+                                                    <Text>
+                                                        'moongkle' 사이트의 심플한 이미지를 살려<br/>
+                                                        더 깔끔하게 레이아웃으로 재구성<br/>
+                                                        디자인된 레이아웃을 탄탄하고<br/>
+                                                        조직적인 HTML로 구현
+                                                    </Text>
+                                                </Col>
+                                                <Col span={12}>
+                                                    <img src={img1} alt={'img1'} width={isMd?'250px':'100%'}/>
+                                                </Col>
+                                            </Row> :
+                                                <Row>
+                                                    <Col span={24}>
+                                                        <Title level={5}><PushpinOutlined /> Project Goal</Title>
+                                                        <img src={img1} alt={'img1'} width={isMd?'250px':'100%'}/><br/>
+                                                        <Text>
+                                                            'moongkle' 사이트의 심플한 이미지를 살려<br/>
+                                                            더 깔끔하게 레이아웃으로 재구성<br/>
+                                                            디자인된 레이아웃을 탄탄하고<br/>
+                                                            조직적인 HTML로 구현
+                                                        </Text>
+                                                    </Col>
+                                                </Row>
+                                            }
+
                                         </Col>
+                                        <Divider className={'original'}/>
                                         <Col span={24}>
                                             {isMd?
                                                 <Row>
@@ -88,58 +107,29 @@ const MoongKleInfo = () => {
                                                         <Text>상세페이지 디자인을 수정, 보완 했습니다.</Text>
                                                     </Col>
                                                     <Col span={12}>
-                                                        <img src={img4} alt={'info_4'} width={'100%'}/>
+                                                        <img src={img2} alt={'info_2'} width={'100%'}/>
                                                     </Col>
                                                 </Row>
                                             :
                                                 <>
                                             <Title level={5}><PushpinOutlined /> 상세페이지 디자인 수정</Title>
-                                            <img src={img4} alt={'info_4'} width={'100%'}/>
+                                            <img src={img2} alt={'info_2'} width={'100%'}/>
                                             <Text>상세페이지 디자인을 수정, 보완 했습니다.</Text>
                                                 </>
                                             }
                                         </Col>
+                                        <Divider className={'original'}/>
                                         <Col span={24}>
-                                            {isMd?
-                                                <Row>
-                                                    <Col span={12}>
-                                                        <Title level={5}><PushpinOutlined /> 보기편한 메뉴얼</Title>
-                                                        <Text>복잡한 메뉴들을 상단에 정리해서 수정보완 하였습니다</Text>
-                                                    </Col>
-                                                    <Col span={12}>
-                                                        <img src={img4} alt={'info_4'} width={'100%'}/>
-                                                    </Col>
-                                                </Row>
-                                                :
-                                                <>
-                                                    <Title level={5}><PushpinOutlined /> 보기편한 메뉴얼</Title>
-                                                    <img src={img4} alt={'info_4'} width={'100%'}/>
-                                                    <Text>복잡한 메뉴들을 상단에 정리해서 수정보완 하였습니다</Text>
-                                                </>
-                                            }
+                                            <Title level={5}><PushpinOutlined /> 보기편한 메뉴얼</Title>
+                                            <img src={img3} alt={'info_3'} width={isMd? '300px' : '100%'}/><br/>
+                                            <Text>복잡한 메뉴들을 상단에 정리해서 수정보완 하였습니다</Text>
                                         </Col>
+                                        <Divider className={'original'}/>
                                         <Col span={24}>
-                                            {isMd?
-                                                <Row>
-                                                    <Col span={12}>
-                                                        <Title level={5}><PushpinOutlined /> 타이틀 배너</Title>
-                                                        <Text>타이틀 배너 반응형을 위해 모바일,PC 사이즈를 따로 제작</Text>
-                                                    </Col>
-                                                    <Col span={12}>
-                                                        <img src={img4} alt={'info_4'} width={'100%'}/>
-                                                    </Col>
-                                                </Row>
-                                                :
-                                                <>
-                                                    <Title level={5}><PushpinOutlined /> 타이틀 배너</Title>
-                                                    <img src={img4} alt={'info_4'} width={'100%'}/>
-                                                    <Text>타이틀 배너 반응형을 위해 모바일,PC 사이즈를 따로 제작</Text>
-                                                </>
-                                            }
+                                            <Title level={5}><PushpinOutlined /> 타이틀 배너</Title>
+                                            <img src={img4} alt={'info_4'} width={'100%'}/>
+                                            <Text>타이틀 배너 반응형을 위해 모바일,PC 사이즈를 따로 제작</Text>
                                         </Col>
-
-
-
                                     </Row>
                                 </Panel>
 
@@ -153,8 +143,8 @@ const MoongKleInfo = () => {
                                         </Col>
                                         <Col span={24}>
                                             <Title level={5} ><PushpinOutlined /> Color</Title>
-                                            <Text>
-                                                #333333 #BABABA #FFFFFF
+                                            <Text className={'moongkle_colorGuid'}>
+                                                <span></span> #333333  <span></span> #BABABA  <span></span> #FFFFFF
                                             </Text>
                                         </Col>
                                         <Col span={24}>

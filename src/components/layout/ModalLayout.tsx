@@ -33,7 +33,7 @@ const ModalLayout = (props: ModalProps) => {
                 centered
                 onOk={onOk}
                 onCancel={onCancel}
-                width={isMd?700:300}
+                width={isMd?700:330}
                 className={'pf_modal'}
                 footer={'null'}>
                 {children}
