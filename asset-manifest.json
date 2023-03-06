@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio_2023/static/css/main.73e77b56.css",
-    "main.js": "/portfolio_2023/static/js/main.ae6a8b0e.js",
+    "main.css": "/portfolio_2023/static/css/main.bb68b206.css",
+    "main.js": "/portfolio_2023/static/js/main.bff1b6fb.js",
     "static/js/787.755d6b54.chunk.js": "/portfolio_2023/static/js/787.755d6b54.chunk.js",
     "static/media/my_img.jpg": "/portfolio_2023/static/media/my_img.460aaf655f1fcb279403.jpg",
     "static/media/petner_erd.png": "/portfolio_2023/static/media/petner_erd.3b8c7205b15217ab47c1.png",
     "static/media/info_11.png": "/portfolio_2023/static/media/info_11.31259bee5ccaab20058d.png",
+    "static/media/img1.png": "/portfolio_2023/static/media/img1.5257cb62ee032e629336.png",
+    "static/media/img2.png": "/portfolio_2023/static/media/img2.69338824bac6bf9e42e4.png",
     "static/media/info_13.png": "/portfolio_2023/static/media/info_13.22b1e2be181146d8efd7.png",
     "static/media/info_14.png": "/portfolio_2023/static/media/info_14.15b2883191282b8116d2.png",
+    "static/media/moongkle_mac_img.png": "/portfolio_2023/static/media/moongkle_mac_img.8d42dd788c5f07f093f5.png",
+    "static/media/img4.png": "/portfolio_2023/static/media/img4.cfd9cea01fe8947bcd1f.png",
     "static/media/info_9.png": "/portfolio_2023/static/media/info_9.555e84dd95a768353f33.png",
     "static/media/petner_main.png": "/portfolio_2023/static/media/petner_main.cc0fd25936af56cede5d.png",
     "static/media/info_4.png": "/portfolio_2023/static/media/info_4.b90fdfaa9664a5b19d42.png",
     "static/media/info_8.png": "/portfolio_2023/static/media/info_8.d8e89a4822a8784ceb18.png",
+    "static/media/nerdy_mac_img.png": "/portfolio_2023/static/media/nerdy_mac_img.b7e0457c02d9ffdf0aee.png",
     "static/media/info_1.png": "/portfolio_2023/static/media/info_1.715f28401d31db06825f.png",
     "static/media/info_5.png": "/portfolio_2023/static/media/info_5.a1013b76ab59e0f3e811.png",
     "static/media/info_10.png": "/portfolio_2023/static/media/info_10.1ed86c96274bf1a8a874.png",
@@ -24,12 +29,12 @@
     "static/media/nerdy.png": "/portfolio_2023/static/media/nerdy.224adca1c79c4a247415.png",
     "static/media/petner_m_img.png": "/portfolio_2023/static/media/petner_m_img.ab48ab6308cf7728c2c1.png",
     "index.html": "/portfolio_2023/index.html",
-    "main.73e77b56.css.map": "/portfolio_2023/static/css/main.73e77b56.css.map",
-    "main.ae6a8b0e.js.map": "/portfolio_2023/static/js/main.ae6a8b0e.js.map",
+    "main.bb68b206.css.map": "/portfolio_2023/static/css/main.bb68b206.css.map",
+    "main.bff1b6fb.js.map": "/portfolio_2023/static/js/main.bff1b6fb.js.map",
     "787.755d6b54.chunk.js.map": "/portfolio_2023/static/js/787.755d6b54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73e77b56.css",
-    "static/js/main.ae6a8b0e.js"
+    "static/css/main.bb68b206.css",
+    "static/js/main.bff1b6fb.js"
   ]
 }
