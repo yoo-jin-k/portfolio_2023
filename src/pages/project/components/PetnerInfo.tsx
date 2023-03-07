@@ -51,7 +51,7 @@ const PetnerInfo = () => {
                                     </Text>
                                 </Col>
                                 <Col>
-                                    <Button size="middle" shape="round" href={'https://github.com/kostapetner/petner'} id={'main_btn'} style={{marginTop:isMd?0:15}}>Github <LinkOutlined style={{color:'#fff'}}/></Button>
+                                    <Button size="middle" shape="round" href={'https://github.com/kostapetner/petner'} id={'main_btn'} style={{marginTop:isMd?0:15}} target='_blank'>Github</Button>
                                 </Col>
                             </Row>
                         </Col>

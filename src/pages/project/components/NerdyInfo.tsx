@@ -40,7 +40,8 @@ const NerdyInfo = () => {
                                     </Text>
                                 </Col>
                                 <Col>
-                                    <Button size="middle" shape="round" href={'https://yoo-jin-k.github.io/NERDY.githun.io/'} id={'main_btn'} style={{marginTop:isMd?0:15}}>Github <LinkOutlined style={{color:'#fff'}}/></Button>
+                                    <Button size="middle" shape="round" href={'https://github.com/yoo-jin-k/NERDY.githun.io'} id={'main_btn'} style={{marginTop:isMd?0:15,marginRight:10}} target='_blank'>Github</Button>
+                                    <Button size="middle" shape="round" href={'https://yoo-jin-k.github.io/NERDY.githun.io/'} id={'main_btn'} style={{marginTop:isMd?0:15}} target='_blank'>View</Button>
                                 </Col>
                             </Row>
                         </Col>

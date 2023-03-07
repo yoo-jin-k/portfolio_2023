@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import "color";
-
+body{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   h1, h2, h3, h4, h5, p, span, text, .ant-typography, title {
     &.ant-typography {
@@ -14,8 +19,27 @@
 }
 .ant-layout .ant-layout-header {
   padding-inline: 10vw;
+  display: flex;
+  justify-content: space-between;
   @media (max-width: 1040px) { padding-inline: 5vw;}
   @media (max-width: 768px) {padding-inline: 20px;}
+  .toggle_menu {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    & > a {
+      cursor:pointer;
+      display: flex;
+      padding-inline: 20px;
+      &:hover { background: $point-bg; }
+    }
+  }
+  :where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary.toggle_mo {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+  :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {background-color: rgba(255, 255, 255, 0)
+  }
 
 }
 .logo {
@@ -35,6 +59,12 @@
     @media (max-width: 1040px) { padding: 0px 5vw }
     @media (max-width: 768px) { padding: 0px 20px; }
     .project_md {
+      //position: absolute;
+      //top: 80px;
+      //bottom: 20px;
+      //overflow: hidden;
+      //overflow-y: auto;
+
       @media (max-width: 768px) {
         position: absolute;
         top: 80px;
@@ -42,7 +72,7 @@
         left: 20px;
         right: 20px;
         overflow: hidden;
-        overflow-y: scroll;
+        overflow-y: auto;
       }
     }
   }
@@ -72,17 +102,21 @@
     box-shadow: none;
   }
   .ant-menu-item-selected {
-    background-color: $point-bg;
+    background-color: rgba(255, 255, 255, 0);
     color: $point-color;
-    & > span > a {
-      //background: aqua;
-      width: 100vw;
-      display: flex;
-      position: absolute;
-      left: 0px;
-      padding-left: 16px;
-      //z-index: 99999999;
+    &:hover .ant-menu-title-content {
+      color: $point-color;
     }
+
+    //& > span > a {
+    //  //background: aqua;
+    //  width: 100vw;
+    //  display: flex;
+    //  position: absolute;
+    //  left: 0px;
+    //  padding-left: 16px;
+    //  //z-index: 99999999;
+    //}
   }
 }
 
