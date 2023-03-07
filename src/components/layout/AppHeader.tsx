@@ -132,7 +132,7 @@ const AppHeader = (props: { collapsed: boolean }) => {
                     :
                     (<>
                         <div>
-                            <Button type="primary" onClick={toggleChange} style={{marginBottom: 16}}
+                            <Button type="text" onClick={toggleChange} style={{marginBottom: 16}}
                                     className={'toggle_mo'}>
                                 {toggleBar ? <MenuOutlined/> : <CloseOutlined/>}
                             </Button>
