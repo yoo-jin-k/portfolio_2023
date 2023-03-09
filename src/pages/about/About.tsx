@@ -4,6 +4,7 @@ import { Col, Grid, Row, Typography, Layout, Button, Divider, Modal } from 'antd
 import my_img from '../../assets/my_img.jpg';
 import AboutInfo from './AboutInfo';
 import ModalLayout from '../../components/layout/ModalLayout';
+import SubTitle from "../../components/layout/SubTitle";
 const {Header, Content, Footer} = Layout;
 const { useBreakpoint } = Grid;
 const { Title,Text } = Typography;
@@ -39,9 +40,10 @@ const About = () => {
                             <Row>
                                 <Col span={24}>
                                     <Title level={2} className={'logo'}><span className={'point_color'}>94</span>0811</Title>
-                                    <Text>
+                                    {/*<SubTitle/>*/}
+                                    <Title level={5} className={'sub_title'}>
                                         A person who continues to develop
-                                    </Text>
+                                    </Title>
                                 </Col>
                                 <Col span={24}>
                                     <Divider/>

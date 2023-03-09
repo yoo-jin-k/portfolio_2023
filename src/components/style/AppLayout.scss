@@ -17,6 +17,9 @@ body{
   color: #fff;
   }
 }
+:where(.css-dev-only-do-not-override-10ed4xt).ant-typography+h5.ant-typography.sub_title,
+h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-weight: 400;
+  margin: 0 0 15px 0;}
 .ant-layout .ant-layout-header {
   //
   div:first-child {
@@ -25,9 +28,13 @@ body{
     }
   }
   //
+  & > div {display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;}
   padding-inline: 10vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 1040px) { padding-inline: 5vw;}
   @media (max-width: 768px) {padding-inline: 20px;}
   .toggle_menu {

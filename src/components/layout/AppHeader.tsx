@@ -89,6 +89,7 @@ const AppHeader = (props: { collapsed: boolean }) => {
     return (
         <>
             <Header style={{backgroundColor: 'transparent', position: 'sticky', top: 0, zIndex: 99999999}}>
+                <div>
                 <Link to="/" className={'logo'}>
                     <div style={{
                         float: 'left',
@@ -161,6 +162,7 @@ const AppHeader = (props: { collapsed: boolean }) => {
                                 </Link>
                             </Menu>
                         }</>)}
+                </div>
             </Header>
             <AppRoute/>
         </>

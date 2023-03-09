@@ -26,8 +26,11 @@ const AboutInfo = () => {
                     <Row>
                         <Title level={4} className={'logo'}><span className={'point_color'}>94</span>0811</Title>
                     </Row>
-                    <Row style={{marginBottom: 20}}>
-                        간단한 소개글
+                    <Row style={{marginBottom: 10}}>
+                        <Title level={5} className={'sub_title'}>
+                            A person who<br/>
+                            continues to develop
+                        </Title>
                     </Row>
                     <Row className={'icon_group'}>
                         <Col span={24}><UserOutlined className={'point_color'}/> Yoojin, Kim</Col>
