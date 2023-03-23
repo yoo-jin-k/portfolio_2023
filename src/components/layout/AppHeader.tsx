@@ -27,7 +27,7 @@ import {
 import AppRoute from './AppRoute';
 import type {MenuProps} from 'antd';
 
-import logo from '../../assets/cloud_Logo.svg';
+import logo from '../../assets/cloud_Logo.png';
 
 const {Header} = Layout;
 const {Text} = Typography;
@@ -113,7 +113,7 @@ const AppHeader = (props: { collapsed: boolean }) => {
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        <img src={logo} alt={'cloud_logo'} width={80}/>
+                        <img src={logo} alt={'cloud_logo'} width={60}/>
                     </div>
                 </Link>
                 {isMd ?

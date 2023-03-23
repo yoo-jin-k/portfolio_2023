@@ -29,12 +29,10 @@
     top: 20px;
     opacity: 1;
   }
-  :where(.css-dev-only-do-not-override-10ed4xt).ant-image {
-
+  .ant-image {
     padding: 20px;
-
   }
-  :where(.css-dev-only-do-not-override-10ed4xt).ant-image .ant-image-img {
+  .ant-image .ant-image-img {
     box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.05), 0 3px 6px -4px rgba(0, 0, 0, 0.05), 0 0px 28px 8px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
   }
@@ -46,11 +44,11 @@
     .ant-modal-centered .ant-modal.pf_modal {
       color: #555;
       width: 70vw;
-      height: 88vh;
+      height: 85vh;
       position: relative;
       transform-origin: 362.375px 298px;
       padding: 0px;
-      top: 28px;
+      top: 5px;
       .ant-modal-content {
         background: rgba(255, 255, 255, 0.38);
         // x btn

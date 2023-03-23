@@ -23,7 +23,8 @@ const contentStyle: React.CSSProperties = {
     color: '#fff',
     textAlign: 'center',
     // background: '#364d79',
-    // padding: '20px'
+    padding: '20px',
+    borderRadius: '8px'
 };
 
 const { Meta } = Card;
@@ -83,7 +84,7 @@ const Project = () => {
                                     autoplay
                                 >
                                     <Col>
-                                        <Row  justify={'space-between'}>
+                                        <Row  justify={'space-between'} gutter={16}>
                                             <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject1(true)}>
                                                     <Image
                                                         src={petner}
@@ -159,7 +160,7 @@ const Project = () => {
                                 </Carousel>
                                     :
                                     <Col span={24} className={'project_md_info'}>
-                                        <Row>
+                                        <Row gutter={[0,16]}>
                                             <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject1(true)}>
                                                 <Image
                                                     src={petner}

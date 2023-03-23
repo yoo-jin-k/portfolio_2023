@@ -35,16 +35,28 @@ h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-w
   justify-content: center;
   @media (max-width: 1040px) { padding-inline: 5vw;}
   @media (max-width: 768px) {padding-inline: 20px;}
-  .toggle_menu {}
 
-  :where(.css-dev-only-do-not-override-10ed4xt).ant-btn {
+  .ant-btn {
     color: #555555;
   }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary.toggle_mo {
+  .toggle_mo {
 background-color: rgba(255, 255, 255, 0);
 box-shadow: none;
 }
+  .toggle_menu {
+    a {
+      color: #555;
+    }
+  }
 
+
+}
+.ant-layout .ant-layout-header :where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary.toggle_mo, :where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary:not(:disabled):hover {
+  color: #555;
+  background-color: #ffffff00;
+  box-shadow: none;
+}
+header {
 
 }
 .logo {
@@ -100,6 +112,8 @@ text-transform: uppercase;
 }
 }
 :where(.css-dev-only-do-not-override-10ed4xt) a {color: #555}
+
+:where(.css-10ed4xt).ant-menu-light .ant-menu-item-selected, :where(.css-10ed4xt) a {color: #555}
 :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light .ant-menu-item-selected {color: #555}
 :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-horizontal .ant-menu-item:hover span {color: $point-color}
 .ant-menu-light {
