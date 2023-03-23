@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Grid, Row, Typography, Layout, Button, Divider, Modal } from 'antd';
-// import { t } from '@lingui/macro';
 import my_img from '../../assets/my_img.jpg';
 import AboutInfo from './AboutInfo';
 import ModalLayout from '../../components/layout/ModalLayout';
@@ -35,7 +34,6 @@ const About = () => {
                         <Col span={isMd?9:24}>
                             <img src={my_img} alt={'my_img'} width={'100%'} style={{display:'flex',borderRadius:10}}/>
                         </Col>
-
                         <Col span={isMd?13:24}>
                             <Row>
                                 <Col span={24}>
@@ -75,7 +73,6 @@ const About = () => {
                         </Col>
                     </Row>
                 </div>
-
                 <ModalLayout visible={isModalOpen} onOk={handleOk} onCancel={handleCancel} >
                     <AboutInfo/>
                 </ModalLayout>

@@ -56,6 +56,7 @@ const AboutInfo = () => {
                                 className={'point_color'}>Me</span></Title>
                             <Divider dashed={true}/>
                             <Text>
+                                {/* todo.text 소개글 */}
                                 안녕하세요, 저는 백엔드 개발자 김유진입니다.<br/>
                                 현재 저는 백엔드 개발에 큰 관심을 가지고 있으며<br/>
                                 퍼블리싱으로 시작해 백엔드에 관심이 생겨 <br/>
