@@ -1,6 +1,5 @@
 import {Row, Col, Typography, Collapse, theme, Grid, Button, Divider,Tag} from 'antd';
 import { CaretRightOutlined, ArrowRightOutlined, PushpinOutlined, LinkOutlined } from '@ant-design/icons';
-// import petner_video from '/assets/videos/petner_video.mp4';
 import petner_main from '../../../assets/petner_main.png';
 import img1 from '../../../assets/petner/info_1.png';
 import img2 from '../../../assets/petner/info_2.svg';
