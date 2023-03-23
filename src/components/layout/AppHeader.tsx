@@ -14,8 +14,9 @@ import {
     Grid,
     Breadcrumb,
     Menu,
-    theme
+    theme, Drawer
 } from 'antd';
+import type { DrawerProps, RadioChangeEvent } from 'antd';
 import {
     LogoutOutlined,
     CustomerServiceOutlined,
@@ -25,6 +26,8 @@ import {
 } from '@ant-design/icons';
 import AppRoute from './AppRoute';
 import type {MenuProps} from 'antd';
+
+import logo from '../../assets/cloud_Logo.svg';
 
 const {Header} = Layout;
 const {Text} = Typography;
@@ -66,8 +69,19 @@ const items: MenuItem[] = [
 
 const AppHeader = (props: { collapsed: boolean }) => {
     const {collapsed} = props;
-    const [toggleMenu, setToggleMenu] = useState(false)
-    const [toggleBar, setToggleBar] = useState(true)
+    const [toggleMenu, setToggleMenu] = useState(false);
+    const [toggleBar, setToggleBar] = useState(true);
+
+    const [open, setOpen] = useState(false);
+
+
+    const showDrawer = () => {
+        setOpen(true);
+    };
+
+    const onClose = () => {
+        setOpen(false);
+    };
 
     const toggleChange = () => {
         setToggleMenu(!toggleMenu)
@@ -88,19 +102,18 @@ const AppHeader = (props: { collapsed: boolean }) => {
     } = theme.useToken();
     return (
         <>
-            <Header style={{backgroundColor: 'transparent', position: 'sticky', top: 0, zIndex: 99999999}}>
+            <Header style={{backgroundColor: 'transparent', position: 'sticky', top: 0, zIndex: 1}}>
                 <div>
                 <Link to="/" className={'logo'}>
                     <div style={{
                         float: 'left',
                         height: '31px',
                         margin: '16px 24px 16px 0',
-                        // background: 'rgba(255, 255, 255, 0.3)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        <h1>940811</h1>
+                        <img src={logo} alt={'cloud_logo'} width={80}/>
                     </div>
                 </Link>
                 {isMd ?
@@ -114,7 +127,7 @@ const AppHeader = (props: { collapsed: boolean }) => {
                             backgroundColor: 'rgba(133,112,112,0)',
                             display: 'flex',
                             justifyContent: 'end',
-                            width: 500
+                            width: 370
                         }}
                     >
                         <Link to="/">
@@ -133,12 +146,40 @@ const AppHeader = (props: { collapsed: boolean }) => {
                     :
                     (<>
                         <div>
-                            <Button type="text" onClick={toggleChange} style={{marginBottom: 16}}
-                                    className={'toggle_mo'}>
+
+                            <Button type="primary" onClick={showDrawer} className={'toggle_mo'} >
                                 {toggleBar ? <MenuOutlined/> : <CloseOutlined/>}
                             </Button>
+                            <Drawer placement="top" open={open} closable={false}
+                                    onClose={onClose}
+                            >
+
+                                <Row justify={'end'}>
+                                    <CloseOutlined onClick={onClose} style={{padding: '0 10px'}}/>
+                                </Row>
+
+                                <Menu
+
+                                    className={'toggle_menu'}
+                                    style={{border:'none'}}
+                                >
+                                    <Link to="/">
+                                        <Menu.Item>home</Menu.Item>
+                                    </Link>
+                                    <Link to="/about">
+                                        <Menu.Item>about</Menu.Item>
+                                    </Link>
+                                    <Link to="/project">
+                                        <Menu.Item>project</Menu.Item>
+                                    </Link>
+                                    <Link to="/contact">
+                                        <Menu.Item>contact</Menu.Item>
+                                    </Link>
+                                </Menu>
+                            </Drawer>
                         </div>
                         {toggleMenu &&
+
                             <Menu
                                 defaultSelectedKeys={['1']}
                                 mode="inline"
@@ -161,6 +202,7 @@ const AppHeader = (props: { collapsed: boolean }) => {
                                     <Menu.Item>contact</Menu.Item>
                                 </Link>
                             </Menu>
+
                         }</>)}
                 </div>
             </Header>

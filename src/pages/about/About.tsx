@@ -64,7 +64,7 @@ const About = () => {
                                     </Text>
                                 </Col>
                                 <Col span={24}>
-                                    <Button type="primary" size="large" shape="round" id={'main_btn'} style={{marginTop:20,padding:'0 25px'}} onClick={showModal}>
+                                    <Button type="primary" size="large" shape="round" id={'main_btn'} style={{marginTop:20,padding:'0 30px'}} onClick={showModal}>
                                         Learn More
                                     </Button>
                                 </Col>

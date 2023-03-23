@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react';
-import { Col, Grid, Row, Layout, Typography, Divider, Carousel, Card, Modal, Button } from 'antd';
+import { Col, Grid, Row, Layout, Typography, Divider, Carousel, Card, Modal, Button, Image } from 'antd';
 import { LeftOutlined, RightOutlined, SettingOutlined, EllipsisOutlined } from "@ant-design/icons";
 // import { t } from '@lingui/macro';
 import petner from '../../assets/petner_m_img.png';
@@ -23,6 +23,7 @@ const contentStyle: React.CSSProperties = {
     color: '#fff',
     textAlign: 'center',
     // background: '#364d79',
+    // padding: '20px'
 };
 
 const { Meta } = Card;
@@ -82,58 +83,70 @@ const Project = () => {
                                     autoplay
                                 >
                                     <Col>
-                                        <Row gutter={32} justify={'space-between'}>
-                                            <Col span={8} style={contentStyle} onClick={() => setProject1(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={petner} />}
-                                                >
-                                                </Card>
+                                        <Row  justify={'space-between'}>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject1(true)}>
+                                                    <Image
+                                                        src={petner}
+                                                        preview={false}
+                                                    />
+                                                <div className="content">
+                                                    <h1>Petner</h1>
+                                                    <p>애완동물 매칭 서비스 플랫폼</p>
+                                                </div>
                                             </Col>
-                                            <Col span={8} style={contentStyle} onClick={() => setProject2(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={basicblog} />}
-                                                >
-                                                </Card>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject2(true)}>
+                                                <Image
+                                                    src={basicblog}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Basicblog</h1>
+                                                    <p>개인 Blog 프로젝트</p>
+                                                </div>
                                             </Col>
-                                            <Col span={8} style={contentStyle} onClick={() => setProject3(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={nerdy} />}
-                                                >
-                                                </Card>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject3(true)}>
+                                                <Image
+                                                    src={nerdy}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Nerdy</h1>
+                                                    <p>널디 클론코딩</p>
+                                                </div>
                                             </Col>
                                         </Row>
                                     </Col>
                                     <Col>
-                                        <Row gutter={32} justify={'space-between'}>
-                                            <Col span={8} style={contentStyle} onClick={() => setProject4(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={MOONGKLE} />}
-                                                >
-                                                </Card>
+                                        <Row justify={'space-between'}>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
+                                                <Image
+                                                    src={MOONGKLE}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>MOONGKLE</h1>
+                                                    <p>MOONGKLE 클론코딩</p>
+                                                </div>
                                             </Col>
-                                            <Col span={8} style={contentStyle} >
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={preparing} />}
-                                                >
-                                                </Card>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} >
+                                                <Image
+                                                    src={preparing}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Preparing</h1>
+                                                    <p>준비중</p>
+                                                </div>
                                             </Col>
-                                            <Col span={8} style={contentStyle} >
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={preparing} />}
-                                                >
-                                                </Card>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} >
+                                                <Image
+                                                    src={preparing}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Preparing</h1>
+                                                    <p>준비중</p>
+                                                </div>
                                             </Col>
                                         </Row>
                                     </Col>
@@ -146,38 +159,46 @@ const Project = () => {
                                 </Carousel>
                                     :
                                     <Col span={24} className={'project_md_info'}>
-                                        <Row gutter={[0,32]}>
-                                            <Col span={24} style={contentStyle} onClick={() => setProject1(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={petner} />}
-                                                >
-                                                </Card>
+                                        <Row>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject1(true)}>
+                                                <Image
+                                                    src={petner}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Petner</h1>
+                                                    <p>애완동물 매칭 서비스 플랫폼</p>
+                                                </div>
                                             </Col>
-                                            <Col span={24} style={contentStyle} onClick={() => setProject2(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={basicblog} />}
-                                                >
-                                                </Card>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject2(true)}>
+                                                <Image
+                                                    src={basicblog}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Basicblog</h1>
+                                                    <p>개인 Blog 프로젝트</p>
+                                                </div>
                                             </Col>
-                                            <Col span={24} style={contentStyle} onClick={() => setProject3(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={nerdy} />}
-                                                >
-                                                </Card>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject3(true)}>
+                                                <Image
+                                                    src={nerdy}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Nerdy</h1>
+                                                    <p>Nerdy 클론코딩</p>
+                                                </div>
                                             </Col>
-                                            <Col span={24} style={contentStyle} onClick={() => setProject4(true)}>
-                                                <Card
-                                                    hoverable
-                                                    style={{ width: '100%',height: '100%' }}
-                                                    cover={<img alt="example" src={MOONGKLE} />}
-                                                >
-                                                </Card>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
+                                                <Image
+                                                    src={MOONGKLE}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>MOONGKLE</h1>
+                                                    <p>MOONGKLE 클론코딩</p>
+                                                </div>
                                             </Col>
                                         </Row>
                                     </Col>

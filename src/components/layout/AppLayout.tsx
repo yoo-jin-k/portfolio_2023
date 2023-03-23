@@ -25,8 +25,8 @@ const AppLayout = () => {
             <div className={'background'}>
                 {/* background star */}
                 <div className="noite"></div>
-                <div className="constelacao"></div>
-                <div className="chuvaMeteoro"></div>
+                {/*<div className="constelacao"></div>*/}
+                {/*<div className="chuvaMeteoro"></div>*/}
                 {/*******/}
             </div>
             <AppHeader collapsed={collapsed}/>

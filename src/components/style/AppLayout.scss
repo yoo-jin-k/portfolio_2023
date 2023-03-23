@@ -11,10 +11,8 @@ body{
   h1, h2, h3, h4, h5, p, span, text, .ant-typography, title {
     &.ant-typography {
       font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
-      color: #fff;
     }
     font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
-  color: #fff;
   }
 }
 :where(.css-dev-only-do-not-override-10ed4xt).ant-typography+h5.ant-typography.sub_title,
@@ -24,7 +22,7 @@ h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-w
   //
   div:first-child {
     :where(.css-dev-only-do-not-override-10ed4xt).ant-btn {
-      color: #fff;
+      color: #555555;
     }
   }
   //
@@ -37,54 +35,10 @@ h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-w
   justify-content: center;
   @media (max-width: 1040px) { padding-inline: 5vw;}
   @media (max-width: 768px) {padding-inline: 20px;}
-  .toggle_menu {
-    position: absolute;
-    top: 64px;
-    left: 0px;
-    & > a {
-      cursor:pointer;
-      display: flex;
-      padding-inline: 0px;
-      //&:hover { background: $point-bg; }
-      & > li, :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light.ant-menu-inline .ant-menu-item {
-        padding-inline: 0px;
-        .ant-menu-title-content {padding: 0 18px}
-      }
-      :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light, span.ant-menu-title-content {
-        -ms-high-contrast-adjust: none;
-        //? toggle menu mini list
-        background: $point-bg;
-        //background: none;
-        color: $point-color;
-        font-weight: bold;
-      }
-    }
-    :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-inline .ant-menu-item {
-      height: 40px;
-      line-height: 40px;
-      /* padding-inline: 16px; */
-      padding-inline: 0px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      /* margin-inline: 4px; */
-      margin-inline: 0px;
-      margin-block: 4px;
-      /* width: calc(100% - 8px);*/
-      width: 100%;
-      &:active, &-active, &-active:hover, &:active:hover {
-        background: rgba(255, 255, 255, 0);
-      }
-    }
-    :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-inline.ant-menu-root .ant-menu-item >.ant-menu-title-content {
-      padding: 0 20px;
-      border-radius: 16px;
-    }
-    :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {background-color: rgba(255, 255, 255, 0)
-    }
-  }
+  .toggle_menu {}
 
   :where(.css-dev-only-do-not-override-10ed4xt).ant-btn {
-    color: #fff;
+    color: #555555;
   }
 :where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary.toggle_mo {
 background-color: rgba(255, 255, 255, 0);
@@ -100,7 +54,7 @@ font-size: 12px;
 }
 }
 .site-layout {
-color: #fff;
+color: #555;
 z-index: 999;
 //display: table;
 // add
@@ -118,14 +72,9 @@ vertical-align:middle;
 //padding: 0px 10vw;
 max-width: 1200px;
 width: 100%;
-//@media (max-width: 1040px) { padding: 0px 5vw }
-//@media (max-width: 768px) { padding: 0px 20px; }
+
 .project_md {
-  //position: absolute;
-  //top: 80px;
-  //bottom: 20px;
-  //overflow: hidden;
-  //overflow-y: auto;
+
 
   @media (max-width: 768px) {
     position: absolute;
@@ -154,10 +103,10 @@ text-transform: uppercase;
 }
 }
 }
-
+:where(.css-dev-only-do-not-override-10ed4xt) a {color: #555}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light .ant-menu-item-selected {color: #555}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-horizontal .ant-menu-item:hover span {color: $point-color}
 .ant-menu-light {
-background-color: #000000e3;
-width: 100%;
 
 &.ant-menu-submenu>.ant-menu {
 background-color: rgba(255, 255, 255, 0);
@@ -165,20 +114,10 @@ box-shadow: none;
 }
 .ant-menu-item-selected {
 background-color: rgba(255, 255, 255, 0);
-color: $point-color;
 &:hover .ant-menu-title-content {
   color: $point-color;
 }
 
-//& > span > a {
-//  //background: aqua;
-//  width: 100vw;
-//  display: flex;
-//  position: absolute;
-//  left: 0px;
-//  padding-left: 16px;
-//  //z-index: 99999999;
-//}
 }
 }
 
@@ -190,13 +129,13 @@ color: $point-color;
 .home_title {
 color: #fff;
 margin: 0px;
-font-size: 5.5vw;
+font-size: 4vw;
 @media (max-width: 768px) {font-size: 10vw}
 }
 .home_sub {
-font-size: 2vw;
+font-size: 1.5vw;
 font-weight: 500;
-@media (max-width: 768px) {font-size: 4.5vw}
+@media (max-width: 768px) {font-size: 4vw}
 }
 }
 
@@ -216,10 +155,7 @@ background-repeat: no-repeat;
 
 
 .ant-carousel {
-//width: 80vw;
-// add
 width: 100%;
-//@media (max-width: 1040px) { width: 90vw; }
 @media (max-width: 768px) { width: calc(100vw - 40px); }
 }
 
@@ -231,10 +167,14 @@ position: initial;
 
 
 #main_btn {
-background-color: $point_color;
+  background: $point_color;
+  box-shadow: $point_shadow;
+  border-radius: 33.5px;
+  color: #fff;
 border: none;
 &:hover {
 background-color: $point_color;
+  color: #fff;
 }
 }
 

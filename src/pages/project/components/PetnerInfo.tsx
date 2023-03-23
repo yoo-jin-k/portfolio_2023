@@ -28,7 +28,7 @@ const PetnerInfo = () => {
     const { token } = theme.useToken();
     const panelStyle = {
         marginBottom: 24,
-        background: '#3c3c3c',
+        background: '#fff',
         borderRadius: token.borderRadiusLG,
         border: 'none',
     };
