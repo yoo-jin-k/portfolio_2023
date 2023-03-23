@@ -3,7 +3,7 @@
 .about_right {
   //overflow-y: scroll;
   //height: 100%;
-  background: #222222;
+  background: transparent;
   & > .ant-row {
     overflow-y: scroll;
     @media (max-width: 768px) {
@@ -11,7 +11,7 @@
       height: auto;
       padding: 0px;
     }
-    background: #222222;
+    background: transparent;
     width: 100%;
     height: calc(87vh - 35px);
     clear: both;
@@ -28,11 +28,11 @@
       & > .ant-steps-item-container {
         & > .ant-steps-item-content {
           & > .ant-steps-item-title {
-            color: #fff;
+            color: #555;
             .ant-steps-item-subtitle {
-              color: #fff;
+              color: #555;
               padding: 2px 5px;
-              background: #7e7e7e;
+              background: #cdcdcd;
               border-radius: 4px;
             }
           }

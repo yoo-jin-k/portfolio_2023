@@ -1,20 +1,50 @@
 @import "color";
 .project_info {
-  :where(.css-dev-only-do-not-override-10ed4xt).ant-card {
-    border-radius: 8px;
-    background: rgba(0, 0, 0, 0);
+  .contentStyle {
     overflow: hidden;
-    border: none;
+    .content{
+      position: absolute;
+      opacity: 0;
+      box-shadow: none;
+      backdrop-filter: blur(15px);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      top: 20px;
+      left: 20px;
+      width: calc(100% - 40px);
+      height: calc(100% - 45px);
+      @media (max-width: 768px) {
+        height: calc(100% - 40px);
+      }
+      margin: auto;
+      display: flex;
+      border-radius: 8px;
+      background: #616161a6;
+    }
   }
-  .ant-card .ant-card-body {
-    padding: 0px;
+
+  .contentStyle:hover .content{
+    top: 20px;
+    opacity: 1;
   }
+  :where(.css-dev-only-do-not-override-10ed4xt).ant-image {
+
+    padding: 20px;
+
+  }
+  :where(.css-dev-only-do-not-override-10ed4xt).ant-image .ant-image-img {
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.05), 0 3px 6px -4px rgba(0, 0, 0, 0.05), 0 0px 28px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+
 }
 
   .ant-modal-root {
-    .ant-modal-mask { background-color: rgba(0,0,0,8.3);}
+    .ant-modal-mask { background: $background_bg;}
     .ant-modal-centered .ant-modal.pf_modal {
-      color: #fff;
+      color: #555;
       width: 70vw;
       height: 88vh;
       position: relative;
@@ -22,7 +52,7 @@
       padding: 0px;
       top: 28px;
       .ant-modal-content {
-        background: #222222;
+        background: rgba(255, 255, 255, 0.38);
         // x btn
         .ant-modal-close {
           color: #FFF;
@@ -49,7 +79,7 @@
     }
   }
 .project_collapse {
-  .ant-collapse-expand-icon {color: #fff}
+  .ant-collapse-expand-icon {color: $point_color}
   .panel_title.ant-typography {
     margin: 0px;
   }
@@ -85,3 +115,6 @@
   }
 }
 
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-carousel .slick-dots li button {background: $point_color;}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-carousel .slick-dots li.slick-active button {background: $point_color;}

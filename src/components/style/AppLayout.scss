@@ -1,266 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import "color";
-
-body {
+body{
   -ms-overflow-style: none;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
-
 * {
   h1, h2, h3, h4, h5, p, span, text, .ant-typography, title {
     &.ant-typography {
-      font-family: 'Montserrat', 'NotoSansKR', -apple-system, 'Roboto', sans-serif;
-      color: #fff;
+      font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
     }
-
-    font-family: 'Montserrat', 'NotoSansKR', -apple-system, 'Roboto', sans-serif;
-    color: #fff;
+    font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
   }
 }
-
-:where(.css-dev-only-do-not-override-10ed4xt).ant-typography + h5.ant-typography.sub_title,
-h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {
-  font-weight: 400;
-  margin: 0 0 15px 0;
-}
-
+:where(.css-dev-only-do-not-override-10ed4xt).ant-typography+h5.ant-typography.sub_title,
+h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-weight: 400;
+  margin: 0 0 15px 0;}
 .ant-layout .ant-layout-header {
   //
   div:first-child {
     :where(.css-dev-only-do-not-override-10ed4xt).ant-btn {
-      color: #fff;
+      color: #555555;
     }
   }
-
   //
-  & > div {
-    display: flex;
+  & > div {display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-  }
-
+    max-width: 1200px;}
   padding-inline: 10vw;
   display: flex;
   justify-content: center;
-  @media (max-width: 1040px) {
-    padding-inline: 5vw;
-  }
-  @media (max-width: 768px) {
-    padding-inline: 20px;
-  }
-
-  .toggle_menu {
-    position: absolute;
-    top: 64px;
-    left: 0px;
-
-    & > a {
-      cursor: pointer;
-      display: flex;
-      padding-inline: 0px;
-
-      & > li, :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light.ant-menu-inline .ant-menu-item {
-        padding-inline: 0px;
-
-        .ant-menu-title-content {
-          padding: 0 18px
-        }
-      }
-
-      :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light, span.ant-menu-title-content {
-        -ms-high-contrast-adjust: none;
-        background: $point-bg;
-        color: $point-color;
-        font-weight: bold;
-      }
-    }
-
-    :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-inline .ant-menu-item {
-      height: 40px;
-      line-height: 40px;
-      padding-inline: 0px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-inline: 0px;
-      margin-block: 4px;
-      width: 100%;
-
-      &:active, &-active, &-active:hover, &:active:hover {
-        background: rgba(255, 255, 255, 0);
-      }
-    }
-
-    :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-inline.ant-menu-root .ant-menu-item > .ant-menu-title-content {
-      padding: 0 20px;
-      border-radius: 16px;
-    }
-
-    :where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {
-      background-color: rgba(255, 255, 255, 0)
-    }
-  }
+  @media (max-width: 1040px) { padding-inline: 5vw;}
+  @media (max-width: 768px) {padding-inline: 20px;}
+  .toggle_menu {}
 
   :where(.css-dev-only-do-not-override-10ed4xt).ant-btn {
-    color: #fff;
+    color: #555555;
   }
-
-  :where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary.toggle_mo {
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: none;
-  }
+:where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary.toggle_mo {
+background-color: rgba(255, 255, 255, 0);
+box-shadow: none;
+}
 
 
 }
-
 .logo {
-  letter-spacing: 10px;
-  margin: 0px;
+letter-spacing: 10px; margin: 0px;
+@media (max-width: 768px) {
+font-size: 12px;
+}
+}
+.site-layout {
+color: #555;
+z-index: 999;
+// add
+display: flex;
+justify-content: center;
+align-items: center;
+padding-inline: 10vw;
+@media (max-width: 1040px) { padding-inline: 5vw }
+@media (max-width: 768px) { padding-inline: 20px; }
+//
+
+.container {
+display:table-cell;
+vertical-align:middle;
+//padding: 0px 10vw;
+max-width: 1200px;
+width: 100%;
+
+.project_md {
   @media (max-width: 768px) {
-    font-size: 12px;
+    position: absolute;
+    top: 80px;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    overflow: hidden;
+    overflow-y: auto;
   }
 }
-
-.site-layout {
-  color: #fff;
-  z-index: 999;
-  //display: table;
-  // add
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 10vw;
-  @media (max-width: 1040px) {
-    padding-inline: 5vw
-  }
-  @media (max-width: 768px) {
-    padding-inline: 20px;
-  }
-  //
-
-  .container {
-    display: table-cell;
-    vertical-align: middle;
-    max-width: 1200px;
-    width: 100%;
-    .project_md {
-      @media (max-width: 768px) {
-        position: absolute;
-        top: 80px;
-        bottom: 50px;
-        left: 20px;
-        right: 20px;
-        overflow: hidden;
-        overflow-y: auto;
-      }
-    }
-  }
+}
 }
 
 .menu_list {
-  .ant-menu-title-content a:hover {
-    color: $point_color;
-  }
-  font-weight: bold;
-  text-transform: uppercase;
-
-  &.ant-menu-light.ant-menu-horizontal {
-    & > .ant-menu-item-selected::after, & > .ant-menu-item-active:hover::after {
-      bottom: 10px;
-    }
-
-    & > .ant-menu-item::after, & > .ant-menu-submenu-selected::after, & > .ant-menu-submenu-open::after {
-      border-bottom: none;
-    }
-  }
+.ant-menu-title-content a:hover { color: $point_color; }
+font-weight: bold;
+text-transform: uppercase;
+&.ant-menu-light.ant-menu-horizontal {
+& > .ant-menu-item-selected::after , & > .ant-menu-item-active:hover::after {
+  bottom: 10px;
 }
-
+& > .ant-menu-item::after, & > .ant-menu-submenu-selected::after, & > .ant-menu-submenu-open::after {
+  border-bottom: none;
+}
+}
+}
+:where(.css-dev-only-do-not-override-10ed4xt) a {color: #555}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-light .ant-menu-item-selected {color: #555}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-menu-horizontal .ant-menu-item:hover span {color: $point-color}
 .ant-menu-light {
-  background-color: #000000e3;
-  width: 100%;
 
-  &.ant-menu-submenu > .ant-menu {
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: none;
-  }
-
-  .ant-menu-item-selected {
-    background-color: rgba(255, 255, 255, 0);
-    color: $point-color;
-
-    &:hover .ant-menu-title-content {
-      color: $point-color;
-    }
-  }
+&.ant-menu-submenu>.ant-menu {
+background-color: rgba(255, 255, 255, 0);
+box-shadow: none;
 }
-
+.ant-menu-item-selected {
+background-color: rgba(255, 255, 255, 0);
+&:hover .ant-menu-title-content {
+  color: $point-color;
+}
+}
+}
 
 // mewnu - home
 .menu_home {
-  .home_title {
-    color: #fff;
-    margin: 0px;
-    font-size: 5.5vw;
-    @media (max-width: 768px) {
-      font-size: 10vw
-    }
-  }
-
-  .home_sub {
-    font-size: 2vw;
-    font-weight: 500;
-    @media (max-width: 768px) {
-      font-size: 4.5vw
-    }
-  }
+.home_title {
+color: #fff;
+margin: 0px;
+font-size: 4vw;
+@media (max-width: 768px) {font-size: 10vw}
+}
+.home_sub {
+font-size: 1.5vw;
+font-weight: 500;
+@media (max-width: 768px) {font-size: 4vw}
+}
 }
 
 // menu - about
 .menu_about {
-  .my_img {
-    background-image: url('../../assets/sample_img.png');
-    height: 30vw;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    @media (max-width: 768px) {
-      height: 300px;
-    }
-  }
+.my_img {
+background-image: url('../../assets/sample_img.png');
+height: 30vw;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+@media (max-width: 768px) {
+  height: 300px;
+}
+}
 }
 
 
 .ant-carousel {
-  //width: 80vw;
-  // add
-  width: 100%;
-  //@media (max-width: 1040px) { width: 90vw; }
-  @media (max-width: 768px) {
-    width: calc(100vw - 40px);
-  }
+width: 100%;
+@media (max-width: 768px) { width: calc(100vw - 40px); }
 }
-
-//
 .ant-carousel .slick-dots {
-  position: initial;
+position: initial;
 }
-
 
 #main_btn {
-  background-color: $point_color;
-  border: none;
-
-  &:hover {
-    background-color: $point_color;
-  }
+  background: $point_color;
+  box-shadow: $point_shadow;
+  border-radius: 33.5px;
+  color: #fff;
+border: none;
+&:hover {
+background-color: $point_color;
+  color: #fff;
 }
-
+}
 .point_color {
-  color: $point_color;
+color: $point_color;
 }
 
 

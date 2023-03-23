@@ -33,7 +33,7 @@ html, body {
 }
 
 .noite {
-  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
+  background: linear-gradient(180deg, #E8F4FF 0%, #FFECEE 113.61%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -229,6 +229,43 @@ html, body {
   }
   100% {
     -webkit-transform: rotate(360deg);
+  }
+}
+
+
+//.wrap {text-align: center; margin-top: 20px;}
+.wrap {
+  @media (max-width: 768px) {
+    position: relative;
+    top: -35vw;
+  }
+}
+.cloud_img {
+  animation: motion 0.8s linear 0s infinite alternate; position: absolute; top: 50%;
+  transform: translate(50%, -50%);
+  left: 50%;
+  @media (max-width: 768px) { transform: translate(-50%, -130%); }
+
+}
+.main_text {
+  @media (max-width: 768px) {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5vw);
+  }
+
+}
+
+@keyframes motion {
+  0% {
+    transform: translate(-50%, -55%);
+    @media (max-width: 768px) {transform: translate(-50%, -130%);}
+  }
+  100% {
+    transform: translate(-50%, -45%);
+    @media (max-width: 768px) {transform: translate(-50%, -110%);}
   }
 }
 
