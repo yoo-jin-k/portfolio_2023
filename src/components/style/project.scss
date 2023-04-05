@@ -11,12 +11,18 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
-      top: 20px;
-      left: 20px;
-      width: calc(100% - 40px);
-      height: calc(100% - 45px);
+      //top: 20px;
+      //left: 20px;
+      //width: calc(100% - 40px);
+      //height: calc(100% - 45px);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: calc(100% - 55px);
+      height: calc(100% - 40px);
       @media (max-width: 768px) {
         height: calc(100% - 40px);
+        width: calc(100% - 40px);
       }
       margin: auto;
       display: flex;
@@ -26,11 +32,13 @@
   }
 
   .contentStyle:hover .content{
-    top: 20px;
+    //top: 20px;
     opacity: 1;
+
   }
   .ant-image {
     padding: 20px;
+    height: 100%;
   }
   .ant-image .ant-image-img {
     box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.05), 0 3px 6px -4px rgba(0, 0, 0, 0.05), 0 0px 28px 8px rgba(0, 0, 0, 0.05);
