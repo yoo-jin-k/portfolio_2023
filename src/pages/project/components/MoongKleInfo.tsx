@@ -15,7 +15,7 @@ const MoongKleInfo = () => {
     const { token } = theme.useToken();
     const panelStyle = {
         marginBottom: 24,
-        background: '#3c3c3c',
+        background: '#fff',
         borderRadius: token.borderRadiusLG,
         border: 'none',
     };
@@ -56,7 +56,7 @@ const MoongKleInfo = () => {
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                                 className={'project_collapse'}
                             >
-                                <Panel header={<Title level={5} className={'panel_title'}>프로젝트 소개</Title>} key="1" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>프로젝트 소개</Title>} key="0" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Text>몽클이라는 쇼핑몰을 저만의 디자인으로<br/>
@@ -66,7 +66,7 @@ const MoongKleInfo = () => {
                                         </Col>
                                     </Row>
                                 </Panel>
-                                <Panel header={<Title level={5} className={'panel_title'}>상세작업</Title>} key="2" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>상세작업</Title>} key="1" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             {isMd?
@@ -134,7 +134,7 @@ const MoongKleInfo = () => {
                                     </Row>
                                 </Panel>
 
-                                <Panel header={<Title level={5} className={'panel_title'}>Style Guide</Title>} key="3" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>Style Guide</Title>} key="2" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Title level={5} ><PushpinOutlined /> Keyword</Title>

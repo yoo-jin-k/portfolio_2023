@@ -29,7 +29,7 @@ const BasicBlogInfo = () => {
     const { token } = theme.useToken();
     const panelStyle = {
         marginBottom: 24,
-        background: '#3c3c3c',
+        background: '#fff',
         borderRadius: token.borderRadiusLG,
         border: 'none',
     };
@@ -60,14 +60,6 @@ const BasicBlogInfo = () => {
                         <Col span={24}>
                             <img src={main} alt={'main img'} width={'100%'}/>
                         </Col>
-                        <Col span={24} style={{marginBottom:20}}>
-                            <Title level={3}>프로젝트 소개</Title>
-                            <Text>개인 블로그<br/>
-                                코스타 과정 진행중에 개인 프로젝트 과제입니다.<br/>
-                                심플하게 개인 블로그를 만들어서<br/>
-                                사용할수있는 블로그 입니다.
-                            </Text>
-                        </Col>
                         {/**/}
                         <Col span={24}>
 
@@ -77,22 +69,21 @@ const BasicBlogInfo = () => {
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                                 className={'project_collapse'}
                             >
-                                <Panel header={<Title level={5} className={'panel_title'}>프로젝트 목적</Title>} key="1" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>프로젝트 소개</Title>} key="0" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Text>
-                                                CRUD 를 더 심화있게 공부할수있었던 프로젝트 입니다.<br/>
-                                                간단한 예제들로만 공부를 하다가 이번 개인프로젝트로<br/>
-                                                더 상세하게 코드를 만들수있었습니다.<br/>
-                                                bootstrap 으로 깔끔하게 작업했습니다.
+                                                개인 블로그를 만들어서<br/>
+                                                사용할수있는 블로그 사이트 입니다.<br/>
+                                                CRUD 를 더 심화있게 작업한 개인 프로젝트 입니다.
                                             </Text>
                                         </Col>
                                     </Row>
                                 </Panel>
-                                <Panel header={<Title level={5} className={'panel_title'}>ERD</Title>} key="3" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>ERD</Title>} key="1" style={panelStyle}>
                                     <img src={erd} alt={'erd'} width={'100%'}/>
                                 </Panel>
-                                <Panel header={<Title level={5} className={'panel_title'}>주요기능 소개</Title>} key="4" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>주요기능 소개</Title>} key="2" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Title level={5}><PushpinOutlined /> Main</Title>

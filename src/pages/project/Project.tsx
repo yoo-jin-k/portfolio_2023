@@ -121,7 +121,7 @@ const Project = () => {
                                         </Row>
                                     </Col>
                                     <Col>
-                                        <Row justify={'space-between'}>
+                                        <Row justify={'space-between'} gutter={16}>
                                             <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
                                                 <Image
                                                     src={nerdy}
@@ -153,12 +153,6 @@ const Project = () => {
                                                 </div>
                                             </Col>
                                         </Row>
-                                    </Col>
-                                    <Col>
-                                        <h3 style={contentStyle}>3</h3>
-                                    </Col>
-                                    <Col>
-                                        <h3 style={contentStyle}>4</h3>
                                     </Col>
                                 </Carousel>
                                     :

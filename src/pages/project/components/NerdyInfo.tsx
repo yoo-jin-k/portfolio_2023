@@ -13,7 +13,7 @@ const NerdyInfo = () => {
     const { token } = theme.useToken();
     const panelStyle = {
         marginBottom: 24,
-        background: '#3c3c3c',
+        background: '#fff',
         borderRadius: token.borderRadiusLG,
         border: 'none',
     };
@@ -58,7 +58,7 @@ const NerdyInfo = () => {
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                                 className={'project_collapse'}
                             >
-                                <Panel header={<Title level={5} className={'panel_title'}>프로젝트 소개</Title>} key="1" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>프로젝트 소개</Title>} key="0" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Text>
@@ -69,7 +69,7 @@ const NerdyInfo = () => {
                                         </Col>
                                     </Row>
                                 </Panel>
-                                <Panel header={<Title level={5} className={'panel_title'}>상세작업</Title>} key="2" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>상세작업</Title>} key="1" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Title level={5}><PushpinOutlined /> 규칙성</Title>
@@ -107,7 +107,7 @@ const NerdyInfo = () => {
                                     </Row>
                                 </Panel>
 
-                                <Panel header={<Title level={5} className={'panel_title'}>Style Guide</Title>} key="3" style={panelStyle}>
+                                <Panel header={<Title level={5} className={'panel_title'}>Style Guide</Title>} key="2" style={panelStyle}>
                                     <Row>
                                         <Col span={24}>
                                             <Title level={5} ><PushpinOutlined /> Keyword</Title>
