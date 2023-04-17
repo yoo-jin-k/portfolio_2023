@@ -8,6 +8,7 @@ import basicblog from '../../assets/basicblog.jpg';
 import nerdy from '../../assets/nerdy.png';
 import preparing from '../../assets/preparing.png';
 import library from '../../assets/library.png';
+import BeanShop from '../../assets/BeanShop.png';
 
 import ModalLayout from '../../components/layout/ModalLayout';
 import '../../components/style/project.scss';
@@ -16,6 +17,7 @@ import MoongKleInfo from './components/MoongKleInfo';
 import NerdyInfo from "./components/NerdyInfo";
 import BasicBlogInfo from "./components/BasicBlogInfo";
 import LibraryInfo from './components/LibraryInfo';
+import BeanShopInfo from './components/BeanShopInfo';
 
 const {Content} = Layout;
 const { Title,Text } = Typography;
@@ -100,6 +102,16 @@ const Project = () => {
                                             </Col>
                                             <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject2(true)}>
                                                 <Image
+                                                    src={BeanShop}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Bean Shop</h1>
+                                                    <p>원두판매 쇼핑몰 프로젝트</p>
+                                                </div>
+                                            </Col>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject3(true)}>
+                                                <Image
                                                     src={library}
                                                     preview={false}
                                                 />
@@ -108,7 +120,11 @@ const Project = () => {
                                                     <p>개인 도서관리 프로젝트</p>
                                                 </div>
                                             </Col>
-                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject3(true)}>
+                                        </Row>
+                                    </Col>
+                                    <Col>
+                                        <Row justify={'space-between'} gutter={16}>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
                                                 <Image
                                                     src={basicblog}
                                                     preview={false}
@@ -118,11 +134,7 @@ const Project = () => {
                                                     <p>개인 Blog 프로젝트</p>
                                                 </div>
                                             </Col>
-                                        </Row>
-                                    </Col>
-                                    <Col>
-                                        <Row justify={'space-between'} gutter={16}>
-                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject5(true)}>
                                                 <Image
                                                     src={nerdy}
                                                     preview={false}
@@ -132,7 +144,7 @@ const Project = () => {
                                                     <p>널디 클론코딩</p>
                                                 </div>
                                             </Col>
-                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject5(true)}>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} onClick={() => setProject6(true)}>
                                                 <Image
                                                     src={MOONGKLE}
                                                     preview={false}
@@ -140,6 +152,30 @@ const Project = () => {
                                                 <div className="content">
                                                     <h1>MOONGKLE</h1>
                                                     <p>MOONGKLE 클론코딩</p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                    <Col>
+                                        <Row justify={'space-between'} gutter={16}>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} >
+                                                <Image
+                                                    src={preparing}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Preparing</h1>
+                                                    <p>준비중</p>
+                                                </div>
+                                            </Col>
+                                            <Col span={8} style={contentStyle} className={'contentStyle'} >
+                                                <Image
+                                                    src={preparing}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Preparing</h1>
+                                                    <p>준비중</p>
                                                 </div>
                                             </Col>
                                             <Col span={8} style={contentStyle} className={'contentStyle'} >
@@ -170,6 +206,16 @@ const Project = () => {
                                             </Col>
                                             <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject2(true)}>
                                                 <Image
+                                                    src={BeanShop}
+                                                    preview={false}
+                                                />
+                                                <div className="content">
+                                                    <h1>Bean Shop</h1>
+                                                    <p>원두판매 쇼핑몰 프로젝트</p>
+                                                </div>
+                                            </Col>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject3(true)}>
+                                                <Image
                                                     src={library}
                                                     preview={false}
                                                 />
@@ -178,7 +224,7 @@ const Project = () => {
                                                     <p>개인 도서관리 프로젝트</p>
                                                 </div>
                                             </Col>
-                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject3(true)}>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
                                                 <Image
                                                     src={basicblog}
                                                     preview={false}
@@ -188,7 +234,7 @@ const Project = () => {
                                                     <p>개인 Blog 프로젝트</p>
                                                 </div>
                                             </Col>
-                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject4(true)}>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject5(true)}>
                                                 <Image
                                                     src={nerdy}
                                                     preview={false}
@@ -198,7 +244,7 @@ const Project = () => {
                                                     <p>Nerdy 클론코딩</p>
                                                 </div>
                                             </Col>
-                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject5(true)}>
+                                            <Col span={24} style={contentStyle} className={'contentStyle'} onClick={() => setProject6(true)}>
                                                 <Image
                                                     src={MOONGKLE}
                                                     preview={false}
@@ -221,21 +267,24 @@ const Project = () => {
                     <PetnerInfo/>
                 </ModalLayout>
                 <ModalLayout visible={project2} onOk={handleOk} onCancel={handleCancel} >
-                    <LibraryInfo/>
+                    <BeanShopInfo/>
                 </ModalLayout>
                 <ModalLayout visible={project3} onOk={handleOk} onCancel={handleCancel} >
-                    <BasicBlogInfo/>
+                    <LibraryInfo/>
                 </ModalLayout>
                 <ModalLayout visible={project4} onOk={handleOk} onCancel={handleCancel} >
-                    <NerdyInfo/>
+                    <BasicBlogInfo/>
                 </ModalLayout>
                 <ModalLayout visible={project5} onOk={handleOk} onCancel={handleCancel} >
-                    <MoongKleInfo/>
-                </ModalLayout>
-                <ModalLayout visible={project6} onOk={handleOk} onCancel={handleCancel} >
                     <NerdyInfo/>
                 </ModalLayout>
-                
+                <ModalLayout visible={project6} onOk={handleOk} onCancel={handleCancel} >
+                    <MoongKleInfo/>
+                </ModalLayout>
+                {/*<ModalLayout visible={project7} onOk={handleOk} onCancel={handleCancel} >*/}
+                {/*    <NerdyInfo/>*/}
+                {/*</ModalLayout>*/}
+
             </Content>
         </>
     );

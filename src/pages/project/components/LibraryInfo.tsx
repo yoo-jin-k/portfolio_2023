@@ -35,7 +35,7 @@ const LibraryInfo = () => {
                                     </Text>
                                 </Col>
                                 <Col>
-                                    <Button size="middle" shape="round" href={'https://github.com/yoo-jin-k/library-app'} id={'main_btn'} style={{marginTop:isMd?0:15}} target='_blank'>Github</Button>
+                                    <Button size="middle" shape="round" href={'https://github.com/yoo-jin-k/library-app'} id={'main_btn'} style={{marginTop:isMd?0:15,marginRight:10}} target='_blank'>Github</Button>
                                     <Button size="middle" shape="round" href={'http://54.180.114.53:8080/v1/index.html'} id={'main_btn'} style={{marginTop:isMd?0:15}} target='_blank'>Show</Button>
                                 </Col>
                             </Row>
