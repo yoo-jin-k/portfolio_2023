@@ -30,7 +30,7 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yoo-jin-k.github.io/portfolio_2023/",
+  "homepage": "https://yoo-jin-k.github.io/portfolio_2023/index.html",
   "eslintConfig": {
     "extends": [
       "react-app",
