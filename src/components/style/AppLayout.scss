@@ -7,6 +7,7 @@ body{
 ::-webkit-scrollbar {
   display: none;
 }
+h2 {text-align: center}
 * {
   h1, h2, h3, h4, h5, p, span, text, .ant-typography, title {
     &.ant-typography {
@@ -15,6 +16,7 @@ body{
     font-family: 'Montserrat','NotoSansKR',-apple-system,'Roboto',sans-serif;
   }
 }
+
 :where(.css-dev-only-do-not-override-10ed4xt).ant-typography+h5.ant-typography.sub_title,
 h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-weight: 400;
   margin: 0 0 15px 0;}
@@ -27,7 +29,7 @@ h5:where(.css-dev-only-do-not-override-10ed4xt).ant-typography.sub_title {font-w
   }
   //
   & > div {display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;}
   padding-inline: 10vw;
@@ -65,14 +67,16 @@ letter-spacing: 10px; margin: 0px;
 font-size: 12px;
 }
 }
+
 .site-layout {
 color: #555;
 z-index: 999;
 // add
 display: flex;
 justify-content: center;
-align-items: center;
-padding-inline: 10vw;
+//align-items: center;
+//padding-inline: 10vw;
+max-height: 100vh;
 @media (max-width: 1040px) { padding-inline: 5vw }
 @media (max-width: 768px) { padding-inline: 20px; }
 //
@@ -83,6 +87,11 @@ vertical-align:middle;
 //padding: 0px 10vw;
 max-width: 1200px;
 width: 100%;
+  overflow-y: auto;
+  padding-bottom: 20vh;
+  &.menu_about {
+    height: min-content;
+  }
 
 .project_md {
   @media (max-width: 768px) {

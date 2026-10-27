@@ -78,8 +78,11 @@ const Project = () => {
                     <Row>
                         <Col span={24} className={'project_md'}>
                             <Title level={2}>
-                                Project <span className={'point_color'}>Portfolio</span>
+                                Developed projects
                             </Title>
+                            {/*<Title level={2}>*/}
+                            {/*    Project <span className={'point_color'}>Portfolio</span>*/}
+                            {/*</Title>*/}
                             <Text></Text>
                             <Divider/>
                             <Row className={'project_info'}>

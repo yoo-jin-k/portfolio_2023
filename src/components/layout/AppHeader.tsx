@@ -104,18 +104,18 @@ const AppHeader = (props: { collapsed: boolean }) => {
         <>
             <Header style={{backgroundColor: 'transparent', position: 'sticky', top: 0, zIndex: 1}}>
                 <div>
-                <Link to="/" className={'logo'}>
-                    <div style={{
-                        float: 'left',
-                        height: '31px',
-                        margin: '16px 24px 16px 0',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    }}>
-                        <img src={logo} alt={'cloud_logo'} width={60}/>
-                    </div>
-                </Link>
+                {/*<Link to="/" className={'logo'}>*/}
+                {/*    <div style={{*/}
+                {/*        float: 'left',*/}
+                {/*        height: '31px',*/}
+                {/*        margin: '16px 24px 16px 0',*/}
+                {/*        display: 'flex',*/}
+                {/*        alignItems: 'center',*/}
+                {/*        justifyContent: 'center'*/}
+                {/*    }}>*/}
+                {/*        <img src={logo} alt={'cloud_logo'} width={60}/>*/}
+                {/*    </div>*/}
+                {/*</Link>*/}
                 {isMd ?
                     <Menu
                         mode="horizontal"
